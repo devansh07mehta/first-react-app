@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+State
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Data required for a component
+- Kind off object
+- parameters
 
-## Available Scripts
+* similar to const variable where we can store our data, but u can change data here
 
-In the project directory, you can run:
+Hooks -> useState()
 
-### `npm start`
+Hooks were added to React in version 16.8.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Hooks allow us to "hook" into React features such as state and lifecycle methods.
 
-### `npm test`
+Hook Rules
+There are 3 rules for hooks:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Hooks can only be called inside React function components.
+Hooks can only be called at the top level of a component.
+Hooks cannot be conditional
+Note: Hooks will not work in React class components.
 
-### `npm run build`
+The React useState Hook allows us to track state in a function component.
+State generally refers to data or properties that need to be tracking in an application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+import {useState} from "react";
+const [count, setCount] = useState(); <!-- count => var, setCount => func; -->
+const [number, setNumber] = useState(5); <!-- indicates default value for number as 5. -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+e.g. : create a btn >> on clk >> count ++
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Props
 
-### `npm run eject`
+> > Data which we want to pass to another component
+> > pass data/info from parent component to child component in the form of arguments.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+e.g.: <FunctionalComponent name="rohan" company="dt" height={6} />
