@@ -37,3 +37,38 @@ Props
 > > pass data/info from parent component to child component in the form of arguments.
 
 e.g.: <FunctionalComponent name="rohan" company="dt" height={6} />
+
+
+npm i react-router-dom
+
+router >> routes >> route
+                            /home, /user, /about-us
+BrowserRouter
+
+v 6.5.2
+2 => Bug/Patch fix
+5 => Minor Updates
+6 => Major Updates (breaking updates)
+
+if u want to change any version (i.e. for express,mongoose, or any node related libraries) then just update that version in the package.json file & write npm i in the terminal to install the update
+
+>>> Layout/HOC (Higher Order Component)
+nav<home>footer
+nav<contact>footer
+nav<about-us>footer
+
+<base><home></base>
+Def for HOC: It can add additional features or info to existing component(i.e ClassComponent & FunctionalComponent in our case)
+
+
+>>> React Life Cycle Methods
+* They mainly work on class components
+* In order to get the similar kind of methods in function components we have something called hooks
+
+mounted (constructor, render, componentDidMount)
+updated (componentDidUpdate)
+unmounted (componentWillUnmount)
+
+Mount => It is used or invoked when we deploy or mount the component on the ui
+Update => It will be invoked when we update some value inside the state or any other component on the ui
+Unmount => It is used to unmount or remove the component from our ui. It gets invoked with the mount once since the react library automatically mounts the component & unmounts it & then mounts it back to our ui.
